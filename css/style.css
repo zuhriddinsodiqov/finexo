@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&family=Lora:ital,wght@1,500;1,600&family=Montserrat:wght@300;400&family=Roboto:ital,wght@1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: var(--robo);
+}
+a{
+    color: black;
+}
+:root{
+   --lato: 'Lato', sans-serif;
+   --lora: 'Lora', serif;
+   --mon: 'Montserrat', sans-serif;
+   --robo: 'Roboto', sans-serif;
+}
+body{
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+/* header */
+.header{
+    width: 100%;
+    background-color: #180D66;
+    color: #fff;
+}
+.navigation{
+    width: 100%;
+    height: 10vh;
+}
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo a{
+    color: white;
+    font-size: 2rem;
+    font-family: var(--lato);
+    letter-spacing: 1px;
+}
+.navbar__nav a{
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--lora);
+    margin-left: 10px ;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    transition: all 0.5s linear;
+}
+.navbar__nav .home{
+    color: #0883A8;
+}
+.navbar__nav a:hover{
+    color: #0883A8;
+}
+.banner{
+    width: 100%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;  
+}
+.banner h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+.banner p{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+button{
+    padding: 15px 50px;
+    font-size: 1.3rem;
+    border: 0;
+    background-color: #0883A8;
+    color: #fff;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #180D66;
+}
+.banner .item img{
+    animation: img 2.5s linear infinite;
+}
+@keyframes img {
+    0%, 100%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(7%);
+    }
+}
+.hero{
+    width: 100%;
+    height: 66vh;
+}
+/* our */
+.our{
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+}
+.our .title h2{
+    font-size: 2rem;
+}
+.our .title h2 span{
+    font-size: 2rem;
+    color: #0883A8;
+}
+.our .title p{
+    margin-bottom: 1rem;
+}
+.our__content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.our__content .item{
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+.our__content .item .img img{
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.our__content .item p{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.our__content .item a{
+   opacity: 0.8;
+   transition: all 0.5s ease;
+}
+.our__content .item a:hover{
+    color: #0883A8;
+}
+/* about */
+.about{
+    width: 100%;
+    padding: 4rem;
+    color: #fff;
+    background-color: #180D66
+}
+.about .title{
+    text-align: center;
+}
+.about .title h2{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.about .title h2 span{
+    color: #0883A8;
+}
+.about .title p{
+    margin-bottom: 1rem;
+}
+.about__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.about__content .item h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about__content .item p{
+    margin-bottom: 1rem;
+}
+/* why */
+.why{
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+}
+.why .title h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.why .title h2 span{
+    color: #0883A8;
+}
+.why__content .item img{
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding: 30px 30px;
+    border: 5px solid #180D66;
+    border-radius: 100%;
+}
+.why__content .item{
+    margin-bottom: 2rem;
+}
+/* team */
+.team{
+    width: 100%;
+    padding: 4rem 0;
+    color: #fff;
+    background-color: #180D66;
+    text-align: center;
+    margin: 0 auto;
+}
+.team .title h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.team .title h2 span{
+    font-size: 3rem;
+    color: #0883A8;
+}
+.team__content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team__content .item{
+    padding: 1rem 1rem;
+    background-color: #2b00ff;
+    border-radius: 5px;
+}
+.team__content .item h3{
+    color: #0883A8;
+    margin-top: 1rem;
+}
+.team__content .item span{
+    margin-bottom: 1rem;
+}
+.team__content .item .icon .fa-brands{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2.5rem;
+}
+.team__content .item .img{
+    padding: 0.6rem 0.6rem;
+}
+.team__content .item .img img{
+    width: 50%;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 5px solid #fff;
+}
+/* what */
+.what{
+    width: 100%;
+    padding: 4rem 0;
+}
+.what .title {
+    text-align: center;
+}
+.what .title h2{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+.what .title h2 span{
+    color: #0883A8;
+}
+.what__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.what__content .item{
+    padding: 1rem 1rem;
+    background-color: whitesmoke;
+}
+.what__content .item .img img{
+    width: 20%;
+    border-radius: 100%;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+}
+.what__content .item h3{
+    margin-bottom: 1rem;
+}
+.what__content .item p{
+    margin-top: 1rem;
+}
+/* footer */
+.footer{
+    width: 100%;
+    padding: 4rem 0;
+    background-color:#180D66;
+    color: #fff;
+}
+.footer__content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.footer__content .text{
+    display: flex;
+    flex-direction: column;
+}
+.footer__content h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.footer__content .text a{
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+.footer__content .text a:hover{
+    color: #0883A8;
+}
+.footer__content .item form input::placeholder{
+    color: #fff;
+}
+.footer__content .item form input{
+    width: 100%;
+    height: 10vh;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    text-indent: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom:1px solid #fff ;
+    margin-bottom: 1rem;
+}
+.footer__content .item  .fa-brands{
+    padding: 7px 10px;
+    font-size: 3rem;
+}
+/* copy */
+.copy{
+    width: 100%;
+    padding: 1.5rem 0;
+}
+.copy .item p{
+    text-align: center;
+    font-family: var(--robo);
+}
+.navbar__nav .fa-bars{
+    font-size: 1.5rem;
+    display: none;
+}
